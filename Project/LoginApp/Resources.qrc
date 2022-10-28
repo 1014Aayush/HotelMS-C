@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>Image/black-square-rounded-corners-hi.png</file>
+        <file>Image/OIP.jfif</file>
+        <file>Image/ok.jfif</file>
+        <file>Image/R.jfif</file>
+        <file>Image/output-onlinepngtools (1).png</file>
+        <file>Image/output-onlinepngtools (2).png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>Image/black-square-rounded-corners-hi.png</file>
+        <file>Image/OIP.jfif</file>
+        <file>Image/ok.jfif</file>
+        <file>Image/output-onlinepngtools (1).png</file>
+        <file>Image/output-onlinepngtools (2).png</file>
+        <file>Image/output-onlinepngtools (3).png</file>
+        <file>Image/output-onlinepngtools (4).png</file>
+        <file>Image/output-onlinepngtools (5).png</file>
+        <file>Image/output-onlinepngtools (6).png</file>
+        <file>Image/output-onlinepngtools.png</file>
+        <file>Image/R.jfif</file>
+        <file>Image/R.jpeg</file>
+        <file>Image/The-Rose-Hotel.jpg</file>
+        <file>Image/r22.jpeg</file>
+        <file>Image/Room.jfif</file>
+        <file>Image/OIP (1).jfif</file>
+    </qresource>
+</RCC>

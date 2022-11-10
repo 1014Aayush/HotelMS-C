@@ -1,0 +1,51 @@
+It is same as above program but in above program we made a function outside class so we had to give values as argument to the function in 
+order to make it do some task but now functions are written inside the class so  they have access to the data inside the class so we donot need to 
+pass values.
+
+
+#include <iostream>
+using namespace std;
+
+class Point{
+    public:
+    int x,y;
+};
+
+class Vector{
+    public:
+    Point start,end;
+    
+    void setValue(){
+        start.x=1;
+        start.y=2;
+        end.x=3;
+        end.y=4;
+    }
+    
+    void offset(int offsetX,int offsetY)
+    {
+        start.x+=offsetX;
+        start.y+=offsetY;
+        end.x+=offsetX;
+        end.y+=offsetY;
+     }
+     
+     void print()
+     {
+         cout<<"("<<start.x<<","<<start.y<<")"<<"\n"<<"("<<end.x<<","<<end.y<<")";
+
+     }
+};
+
+int main()
+{
+    Vector v1;
+    v1.setValue();
+    v1.print();
+    v1.offset(1,2);
+    v1.print();
+}
+
+
+
+

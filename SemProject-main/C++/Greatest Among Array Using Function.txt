@@ -1,0 +1,30 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int greatest(int b[10]);
+
+int main()
+{
+    int a[10],greatestnum;
+    cout<<"Enter 10 Numbers";
+        for (int i=0;i<10;i++)
+        {
+        cout<<"\n Enter "<<i<<"th number ";
+        cin>>a[i];
+        }
+    greatestnum=greatest(a);
+    cout<<greatestnum;
+}
+
+int greatest(int b[])
+{
+    int greatestn;
+    greatestn=b[0];
+    for(int i=1;i<10;i++){
+        if (b[i]>greatestn)
+        {
+            greatestn=b[i];
+        }
+    }
+    return greatestn;
+}

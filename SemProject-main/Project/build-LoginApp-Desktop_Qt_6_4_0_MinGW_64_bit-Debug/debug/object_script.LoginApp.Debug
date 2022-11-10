@@ -1,0 +1,16 @@
+debug/homepage.o
+debug/incomeman.o
+debug/main.o
+debug/mainwindow.o
+debug/roomoccupancy.o
+debug/signup.o
+debug/staffmanage.o
+debug/staffsearch.o
+debug/qrc_Resources.o
+debug/moc_homepage.o
+debug/moc_incomeman.o
+debug/moc_mainwindow.o
+debug/moc_roomoccupancy.o
+debug/moc_signup.o
+debug/moc_staffmanage.o
+debug/moc_staffsearch.o

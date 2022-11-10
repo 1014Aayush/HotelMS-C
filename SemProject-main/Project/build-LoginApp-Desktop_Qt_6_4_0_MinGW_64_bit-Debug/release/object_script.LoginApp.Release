@@ -1,0 +1,16 @@
+release/homepage.o
+release/incomeman.o
+release/main.o
+release/mainwindow.o
+release/roomoccupancy.o
+release/signup.o
+release/staffmanage.o
+release/staffsearch.o
+release/qrc_Resources.o
+release/moc_homepage.o
+release/moc_incomeman.o
+release/moc_mainwindow.o
+release/moc_roomoccupancy.o
+release/moc_signup.o
+release/moc_staffmanage.o
+release/moc_staffsearch.o

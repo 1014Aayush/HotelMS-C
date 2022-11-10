@@ -1,0 +1,47 @@
+//Class and object Passing by value and passing by req to external function
+
+//Class and object Passing by value and passing by req to external function
+
+#include <iostream>
+using namespace std;
+
+class Point{
+    public:
+   int x;
+   int y;
+};
+
+class Vector{
+    public:
+    Point start,end;
+};
+
+int offset(Vector &vect,int offsetX,int offsetY);
+int print(Vector vect);
+
+int main(){
+    int offsetX,offsetY;
+    Vector vec;
+    vec.start.x=5;
+    vec.start.y=6;
+    vec.end.x=1;
+    vec.end.y=2;
+    offsetX=1;
+    offsetY=2;
+   offset(vec,offsetX,offsetY);
+    print(vec);
+}
+
+int offset(Vector &vect,int offsetX,int offsetY)
+{
+    vect.start.x+=offsetX;
+    vect.end.x+=offsetX;
+    vect.start.y+=offsetY;
+    vect.end.y+=offsetY;
+}
+
+int print(Vector vect)
+{
+    cout<<"("<<vect.start.x<<","<<vect.start.y<<")"<<"\n"<<"("<<vect.end.x<<","<<vect.end.y<<")";
+}
+

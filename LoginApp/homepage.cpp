@@ -1,6 +1,8 @@
 #include "homepage.h"
 #include "ui_homepage.h"
 #include <roomoccupancy.h>
+#include "mainwindow.h"
+
 
 
 HomePage::HomePage(QWidget *parent) :
@@ -17,9 +19,14 @@ HomePage::~HomePage()
 
 void HomePage::on_pushButton_2_clicked()
 {
-    staffSearch=new Staffsearch(this);
+    /*staffSearch=new Staffsearch(this);
     this->hide();
-    staffSearch->show();
+    staffSearch->show();*/
+
+    this-> hide();
+    Staffsearch Staffsearch;
+    Staffsearch.setModal(true);
+    Staffsearch.exec();
 
 }
 
@@ -27,16 +34,31 @@ void HomePage::on_pushButton_2_clicked()
 
 void HomePage::on_pushButton_3_clicked()
 {
-    roomOccupancy=new roomoccupancy(this);
+   /* roomOccupancy=new roomoccupancy(this);
     this->hide();
-    roomOccupancy->show();
+    roomOccupancy->show();*/
+
+    this-> hide();
+    roomoccupancy roomoccupancy;
+    roomoccupancy.setModal(true);
+    roomoccupancy.exec();
+
 }
 
 
-void HomePage::on_pushButton_clicked()
-{
-    incomeManagement= new IncomeMan(this);
+//void HomePage::on_pushButton_clicked()
+//{
+   /* incomeManagement= new IncomeMan(this);
     this->hide();
-    incomeManagement->show();
-}
+    incomeManagement->show();*/
+
+   /* this-> hide();
+    IncomeMan IncomeMan ;
+    IncomeMan.setModal(true);
+    IncomeMan.exec();
+}*/
+
+
+
+
 

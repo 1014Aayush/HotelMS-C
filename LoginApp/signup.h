@@ -7,6 +7,7 @@
 #include <QtSql/QSqlQuery>
 #include <QDebug>
 #include <QMessageBox>
+//#include <mainwindow.h>
 
 namespace Ui {
 class signup;
@@ -22,6 +23,7 @@ public:
 
 private slots:
     void on_pushButton_clicked();
+
 
 private:
     Ui::signup *ui;

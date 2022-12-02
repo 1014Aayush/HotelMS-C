@@ -1,5 +1,6 @@
 #include "signup.h"
 #include "ui_signup.h"
+#include <mainwindow.h>
 
 signup::signup(QWidget *parent) :
     QDialog(parent),
@@ -19,13 +20,15 @@ void signup::on_pushButton_clicked()
 
     //connection to Sqlite Database
     QSqlDatabase sqlitedb = QSqlDatabase::addDatabase("QSQLITE");
-    sqlitedb.setDatabaseName("D:/Qt/project/Myproject-main/Myproject-main/LoginApp/database/datab.sqlite");
+    sqlitedb.setDatabaseName("C:/Users/saroj/Desktop/SemProject2-main/SemProject-main/Project/LoginApp/database/datab.sqlite");
 
 
 
 
     if(sqlitedb.open()){
         //reterving from signup data fields
+        QMessageBox::information(this,"Inserted", "Data Success");
+
         QString username =ui->lineEdit_2->text();
         QString businessname =ui->lineEdit->text();
         QString password=ui->lineEdit_3->text();
@@ -34,6 +37,7 @@ void signup::on_pushButton_clicked()
         //Run Our Insert Query
 
         QSqlQuery qry;
+
 
         qry.prepare("INSERT INTO signup(username,businessname,password,years)"
                    "VALUES "
@@ -59,4 +63,9 @@ void signup::on_pushButton_clicked()
 
     }
 }
+
+
+
+
+
 

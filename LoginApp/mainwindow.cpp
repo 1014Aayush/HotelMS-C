@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QMessageBox>
-QString store_username;
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -17,9 +17,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_Login_clicked()
 {
-
     QString username =ui->Username->text();
     QString password =ui->Password->text();
+
 
  /*   if (username =="test" && password=="test")
     {
@@ -33,8 +33,8 @@ void MainWindow::on_Login_clicked()
         QMessageBox::information(this,"Login","Username And Password Is InCorrect");
     }*/
 
-        QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
-        database.setDatabaseName("D:/Qt/project/Myproject-main/Myproject-main/LoginApp/database/datab.sqlite");
+    QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
+        database.setDatabaseName("C:/Users/saroj/Desktop/SemProject2-main/SemProject-main/Project/LoginApp/database/datab.sqlite");
 
 
         if (database.open())
@@ -60,7 +60,6 @@ void MainWindow::on_Login_clicked()
 
                      if(usernameFromDB == username && passwordFromDB == password)
                      {
-                         store_username=usernameFromDB;
                          this->close();
                          auto page = new HomePage();
                          page->setAttribute(Qt::WA_DeleteOnClose);

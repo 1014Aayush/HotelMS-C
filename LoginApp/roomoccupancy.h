@@ -1,7 +1,22 @@
 #ifndef ROOMOCCUPANCY_H
 #define ROOMOCCUPANCY_H
+
+
+
+
 #include <QDialog>
-//#include <homepage.h>
+#include <QWidget>
+#include <bookroomdialog.h>
+#include <available.h>
+#include <QtSql>
+#include <QSqlDatabase>
+#include <QMessageBox>
+#include <QDialog>
+#include <QtSql/QSql>
+#include <QtSql/QSqlQuery>
+#include <QDebug>
+
+
 
 
 namespace Ui {
@@ -18,11 +33,21 @@ public:
 
 
 
-/*private slots:
+
+private slots:
+
+
+    void on_Continue_clicked();
+
+    void on_back_clicked();
+
     void on_pushButton_clicked();
-*/
+
 private:
     Ui::roomoccupancy *ui;
+    available *aVailable;
+    bookroomdialog *bookroomdialog;
+
 
 };
 

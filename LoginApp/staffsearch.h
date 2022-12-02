@@ -2,8 +2,6 @@
 #define STAFFSEARCH_H
 
 #include <QDialog>
-#include <staffmanage.h>
-
 namespace Ui {
 class Staffsearch;
 }
@@ -19,10 +17,10 @@ public:
 private slots:
     void on_SearchButton_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::Staffsearch *ui;
-    Staffmanage *staffManage;
-
 };
 
 #endif // STAFFSEARCH_H

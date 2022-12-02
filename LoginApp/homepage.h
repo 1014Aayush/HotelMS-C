@@ -4,7 +4,9 @@
 #include <QDialog>
 #include <staffsearch.h>
 #include <roomoccupancy.h>
-#include <incomeman.h>
+//#include <incomeman.h>
+//#include <mainwindow.h>
+
 namespace Ui {
 class HomePage;
 }
@@ -22,13 +24,19 @@ private slots:
 
     void on_pushButton_3_clicked();
 
-    void on_pushButton_clicked();
+ //   void on_pushButton_clicked();
+
+    //void on_pushButton_5_clicked();
+
+   // void on_pushButton_5_clicked();
 
 private:
     Ui::HomePage *ui;
      Staffsearch *staffSearch;
      roomoccupancy *roomOccupancy;
-     IncomeMan *incomeManagement;
+    // IncomeMan *incomeManagement;
+
+
 };
 
 #endif // HOMEPAGE_H

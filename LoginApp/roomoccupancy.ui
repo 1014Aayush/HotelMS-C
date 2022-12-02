@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>roomoccupancy</class>
+ <widget class="QDialog" name="roomoccupancy">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1080</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:url(:/Image/OIP.jfif)</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>30</y>
+     <width>531</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>36</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Room Occupancy</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>180</y>
+     <width>771</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QRadioButton" name="radioButton">
+      <property name="text">
+       <string>101</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QRadioButton" name="radioButton_2">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>102</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="text">
+       <string>103</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QRadioButton" name="radioButton_4">
+      <property name="text">
+       <string>104</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QRadioButton" name="radioButton_5">
+      <property name="text">
+       <string>105</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QRadioButton" name="radioButton_6">
+      <property name="text">
+       <string>106</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QRadioButton" name="radioButton_7">
+      <property name="text">
+       <string>107</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QRadioButton" name="radioButton_8">
+      <property name="text">
+       <string>108</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QRadioButton" name="radioButton_9">
+      <property name="text">
+       <string>109</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QRadioButton" name="radioButton_10">
+      <property name="text">
+       <string>110</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QRadioButton" name="radioButton_11">
+      <property name="text">
+       <string>111</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QRadioButton" name="radioButton_12">
+      <property name="text">
+       <string>112</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QRadioButton" name="radioButton_13">
+      <property name="text">
+       <string>113</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QRadioButton" name="radioButton_14">
+      <property name="text">
+       <string>114</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QRadioButton" name="radioButton_15">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>115</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>label_2</zorder>
+  <zorder>pushButton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
